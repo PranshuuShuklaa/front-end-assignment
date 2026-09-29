@@ -34,30 +34,14 @@
   </section>
 
   <section class="reference" id="reference" aria-labelledby="reference-title">
-    <div class="toolbar">
-      <div>
-        <p class="eyebrow">THE EXAMPLES</p>
-        <h2 id="reference-title">HTML tag reference</h2>
-      </div>
-      <label class="search-label" for="search">Find a tag
-        <input id="search" type="search" placeholder="Try: image, form, header" autocomplete="off">
-      </label>
+    <div class="reference-heading">
+      <p class="eyebrow">THE EXAMPLES</p>
+      <h2 id="reference-title">HTML tag reference</h2>
+      <p>Each example shows what a tag does, a basic syntax, common attributes, and the result in a browser.</p>
     </div>
-
-    <div class="filters" aria-label="Filter examples by category">
-      <button class="filter active" type="button" data-filter="all" aria-pressed="true">All tags</button>
-      <button class="filter" type="button" data-filter="structure" aria-pressed="false">Structure</button>
-      <button class="filter" type="button" data-filter="text" aria-pressed="false">Text</button>
-      <button class="filter" type="button" data-filter="media" aria-pressed="false">Links and media</button>
-      <button class="filter" type="button" data-filter="lists" aria-pressed="false">Lists</button>
-      <button class="filter" type="button" data-filter="data" aria-pressed="false">Tables</button>
-      <button class="filter" type="button" data-filter="forms" aria-pressed="false">Forms</button>
-      <button class="filter" type="button" data-filter="semantic" aria-pressed="false">Semantic</button>
-    </div>
-    <p class="result-count" id="result-count" aria-live="polite">24 examples</p>
 
     <div class="tag-grid">
-      <article class="tag-card" data-category="structure" data-name="doctype html head body document structure">
+      <article class="tag-card">
         <div class="card-top"><span class="number">01</span><code>&lt;html&gt; &lt;head&gt; &lt;body&gt;</code><span class="pill">STRUCTURE</span></div>
         <div class="card-copy"><h3>Document structure</h3><p>These tags form the basic frame of an HTML page. The head stores page information, while the body contains visible content.</p></div>
         <div class="info"><b>Syntax</b><code>&lt;!doctype html&gt; &lt;html lang="en"&gt; &lt;head&gt;...&lt;/head&gt; &lt;body&gt;...&lt;/body&gt; &lt;/html&gt;</code></div>
@@ -65,7 +49,7 @@
         <div class="demo"><span class="demo-label">BROWSER OUTPUT</span><p class="output-note">The browser displays the page title in its tab and the page heading below.</p><div class="mini-page"><span>My first webpage</span><strong>Hello, class!</strong></div></div>
       </article>
 
-      <article class="tag-card" data-category="text" data-name="h1 h2 heading headings">
+      <article class="tag-card">
         <div class="card-top"><span class="number">02</span><code>&lt;h1&gt; to &lt;h6&gt;</code><span class="pill">TEXT</span></div>
         <div class="card-copy"><h3>Headings</h3><p>Headings name the page and its sections. Use them in order to make the content easier to scan.</p></div>
         <div class="info"><b>Syntax</b><code>&lt;h1&gt;Main heading&lt;/h1&gt;</code></div>
@@ -73,7 +57,7 @@
         <div class="demo"><span class="demo-label">BROWSER OUTPUT</span><h4 class="output-heading">A clear page heading</h4></div>
       </article>
 
-      <article class="tag-card" data-category="text" data-name="p paragraph">
+      <article class="tag-card">
         <div class="card-top"><span class="number">03</span><code>&lt;p&gt;</code><span class="pill">TEXT</span></div>
         <div class="card-copy"><h3>Paragraph</h3><p>Groups sentences into a block of regular text. Browsers add space around each paragraph.</p></div>
         <div class="info"><b>Syntax</b><code>&lt;p&gt;Write a sentence here.&lt;/p&gt;</code></div>
@@ -81,7 +65,7 @@
         <div class="demo"><span class="demo-label">BROWSER OUTPUT</span><p>A paragraph keeps related sentences together. This is a second sentence.</p></div>
       </article>
 
-      <article class="tag-card" data-category="text" data-name="strong em mark formatting bold emphasis highlight">
+      <article class="tag-card">
         <div class="card-top"><span class="number">04</span><code>&lt;strong&gt; &lt;em&gt; &lt;mark&gt;</code><span class="pill">TEXT</span></div>
         <div class="card-copy"><h3>Text emphasis</h3><p>Marks important text, spoken emphasis, or a highlighted passage. These tags add meaning as well as style.</p></div>
         <div class="info"><b>Syntax</b><code>&lt;strong&gt;Important&lt;/strong&gt; &lt;em&gt;emphasis&lt;/em&gt; &lt;mark&gt;highlight&lt;/mark&gt;</code></div>
@@ -89,7 +73,7 @@
         <div class="demo"><span class="demo-label">BROWSER OUTPUT</span><p><strong>Important</strong>, <em>emphasized</em>, <mark>highlighted</mark></p></div>
       </article>
 
-      <article class="tag-card" data-category="media" data-name="a anchor link hyperlink">
+      <article class="tag-card">
         <div class="card-top"><span class="number">05</span><code>&lt;a&gt;</code><span class="pill">LINKS</span></div>
         <div class="card-copy"><h3>Link</h3><p>Creates a link to another page, a file, or a place on the current page.</p></div>
         <div class="info"><b>Syntax</b><code>&lt;a href="https://example.com"&gt;Visit the site&lt;/a&gt;</code></div>
@@ -97,15 +81,15 @@
         <div class="demo"><span class="demo-label">BROWSER OUTPUT</span><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">Read the HTML guide on MDN</a></div>
       </article>
 
-      <article class="tag-card" data-category="media" data-name="img image picture">
+      <article class="tag-card">
         <div class="card-top"><span class="number">06</span><code>&lt;img&gt;</code><span class="pill">MEDIA</span></div>
         <div class="card-copy"><h3>Image</h3><p>Places an image in the page. The descriptive <code>alt</code> text helps screen-reader users and appears if the image cannot load.</p></div>
         <div class="info"><b>Syntax</b><code>&lt;img src="photo.jpg" alt="A short description"&gt;</code></div>
         <div class="info"><b>Attributes</b><span><code>src</code>, <code>alt</code>, <code>width</code>, <code>height</code>, <code>loading</code></span></div>
-        <div class="demo"><span class="demo-label">BROWSER OUTPUT</span><img class="sample-image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 180'%3E%3Crect width='480' height='180' fill='%23e6eadc'/%3E%3Ccircle cx='370' cy='48' r='25' fill='%23c28b52'/%3E%3Cpath d='M0 140 125 58l105 82 76-55 174 91H0Z' fill='%23748b68'/%3E%3Cpath d='m0 155 130-48 105 41 105-59 140 65v26H0Z' fill='%23465f4b'/%3E%3C/svg%3E" alt="A simple illustration of hills under the sun" width="480" height="180"></div>
+        <div class="demo"><span class="demo-label">BROWSER OUTPUT</span><img class="sample-image" src="https://interactive-examples.mdn.mozilla.net/media/examples/plumeria.jpg" alt="A simple illustration of hills under the sun" width="480" height="180"></div>
       </article>
 
-      <article class="tag-card" data-category="lists" data-name="ul li unordered list bullet">
+      <article class="tag-card">
         <div class="card-top"><span class="number">07</span><code>&lt;ul&gt; &lt;li&gt;</code><span class="pill">LISTS</span></div>
         <div class="card-copy"><h3>Unordered list</h3><p>Shows related items where the order does not matter. Put each item inside an <code>&lt;li&gt;</code>.</p></div>
         <div class="info"><b>Syntax</b><code>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code></div>
@@ -113,7 +97,7 @@
         <div class="demo"><span class="demo-label">BROWSER OUTPUT</span><ul><li>Notebook</li><li>Pencil</li><li>Ruler</li></ul></div>
       </article>
 
-      <article class="tag-card" data-category="lists" data-name="ol ordered list number">
+      <article class="tag-card">
         <div class="card-top"><span class="number">08</span><code>&lt;ol&gt;</code><span class="pill">LISTS</span></div>
         <div class="card-copy"><h3>Ordered list</h3><p>Shows steps or items where the order matters. Browsers number the list automatically.</p></div>
         <div class="info"><b>Syntax</b><code>&lt;ol&gt;&lt;li&gt;First step&lt;/li&gt;&lt;/ol&gt;</code></div>
@@ -121,7 +105,7 @@
         <div class="demo"><span class="demo-label">BROWSER OUTPUT</span><ol><li>Write the HTML</li><li>Open it in a browser</li><li>Check the result</li></ol></div>
       </article>
 
-      <article class="tag-card" data-category="data" data-name="table tr th td tabular data">
+      <article class="tag-card">
         <div class="card-top"><span class="number">09</span><code>&lt;table&gt; &lt;tr&gt; &lt;th&gt; &lt;td&gt;</code><span class="pill">TABLES</span></div>
         <div class="card-copy"><h3>Table</h3><p>Displays information in rows and columns. Use tables for data, not to arrange a webpage.</p></div>
         <div class="info"><b>Syntax</b><code>&lt;table&gt;&lt;tr&gt;&lt;th&gt;...&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;...&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></div>
@@ -129,15 +113,15 @@
         <div class="demo"><span class="demo-label">BROWSER OUTPUT</span><table><thead><tr><th scope="col">Tag</th><th scope="col">Purpose</th></tr></thead><tbody><tr><td><code>&lt;p&gt;</code></td><td>Text</td></tr><tr><td><code>&lt;a&gt;</code></td><td>Links</td></tr></tbody></table></div>
       </article>
 
-      <article class="tag-card" data-category="forms" data-name="form submit form">
+      <article class="tag-card">
         <div class="card-top"><span class="number">10</span><code>&lt;form&gt;</code><span class="pill">FORMS</span></div>
-        <div class="card-copy"><h3>Form</h3><p>Groups controls that collect information from a visitor. This example gives a local confirmation without sending data anywhere.</p></div>
+        <div class="card-copy"><h3>Form</h3><p>Groups controls that collect information from a visitor. The browser checks the required field, then adds the entered name to the page address when the form is submitted.</p></div>
         <div class="info"><b>Syntax</b><code>&lt;form action="/submit" method="post"&gt;...&lt;/form&gt;</code></div>
         <div class="info"><b>Attributes</b><span><code>action</code>, <code>method</code>, <code>autocomplete</code></span></div>
-        <div class="demo"><span class="demo-label">BROWSER OUTPUT</span><form class="sample-form" id="sample-form"><label for="student-name">Your name</label><input id="student-name" name="student-name" type="text" placeholder="Sam" required><button type="submit">Say hello</button><output id="form-message" aria-live="polite"></output></form></div>
+        <div class="demo"><span class="demo-label">BROWSER OUTPUT</span><form class="sample-form" action="#reference" method="get"><label for="student-name">Your name</label><input id="student-name" name="student-name" type="text" placeholder="Sam" required><button type="submit">Send name</button></form></div>
       </article>
 
-      <article class="tag-card" data-category="forms" data-name="input field email text">
+      <article class="tag-card">
         <div class="card-top"><span class="number">11</span><code>&lt;input&gt;</code><span class="pill">FORMS</span></div>
         <div class="card-copy"><h3>Input</h3><p>Creates a field for a short answer. Its <code>type</code> tells the browser what kind of information to expect.</p></div>
         <div class="info"><b>Syntax</b><code>&lt;input type="email" name="email" placeholder="you@example.com"&gt;</code></div>
@@ -145,15 +129,15 @@
         <div class="demo"><span class="demo-label">BROWSER OUTPUT</span><label for="sample-email">Email address</label><input id="sample-email" type="email" placeholder="you@example.com"></div>
       </article>
 
-      <article class="tag-card" data-category="forms" data-name="button submit click">
+      <article class="tag-card">
         <div class="card-top"><span class="number">12</span><code>&lt;button&gt;</code><span class="pill">FORMS</span></div>
-        <div class="card-copy"><h3>Button</h3><p>Creates a clickable control. Set its type to make clear whether it submits a form or performs another action.</p></div>
+        <div class="card-copy"><h3>Button</h3><p>Creates a clickable control. A button needs a form or JavaScript to perform an action; this example shows a regular button.</p></div>
         <div class="info"><b>Syntax</b><code>&lt;button type="button"&gt;Click me&lt;/button&gt;</code></div>
         <div class="info"><b>Attributes</b><span><code>type</code>, <code>disabled</code>, <code>name</code>, and <code>value</code></span></div>
-        <div class="demo"><span class="demo-label">BROWSER OUTPUT</span><button class="sample-button" id="sample-button" type="button">Click to try</button><span id="button-message" class="button-message" aria-live="polite"></span></div>
+        <div class="demo"><span class="demo-label">BROWSER OUTPUT</span><button class="sample-button" type="button">Example button</button></div>
       </article>
 
-      <article class="tag-card" data-category="forms" data-name="label select option dropdown">
+      <article class="tag-card">
         <div class="card-top"><span class="number">13</span><code>&lt;label&gt; &lt;select&gt;</code><span class="pill">FORMS</span></div>
         <div class="card-copy"><h3>Label and dropdown</h3><p>A label names a control. A select menu lets the visitor choose from a set of options.</p></div>
         <div class="info"><b>Syntax</b><code>&lt;label for="topic"&gt;Topic&lt;/label&gt; &lt;select id="topic"&gt;&lt;option&gt;HTML&lt;/option&gt;&lt;/select&gt;</code></div>
@@ -161,7 +145,7 @@
         <div class="demo"><span class="demo-label">BROWSER OUTPUT</span><label for="sample-topic">Choose a topic</label><select id="sample-topic"><option>HTML</option><option>CSS</option><option>JavaScript</option></select></div>
       </article>
 
-      <article class="tag-card" data-category="media" data-name="audio sound music">
+      <article class="tag-card">
         <div class="card-top"><span class="number">14</span><code>&lt;audio&gt;</code><span class="pill">MEDIA</span></div>
         <div class="card-copy"><h3>Audio</h3><p>Embeds a sound clip with browser playback controls. This sample is hosted online, so it needs an internet connection.</p></div>
         <div class="info"><b>Syntax</b><code>&lt;audio controls src="sound.mp3"&gt;&lt;/audio&gt;</code></div>
@@ -169,15 +153,15 @@
         <div class="demo"><span class="demo-label">BROWSER OUTPUT</span><audio controls preload="none"><source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3" type="audio/mpeg">Your browser does not support audio playback.</audio></div>
       </article>
 
-      <article class="tag-card" data-category="media" data-name="video movie clip multimedia">
+      <article class="tag-card">
         <div class="card-top"><span class="number">15</span><code>&lt;video&gt;</code><span class="pill">MEDIA</span></div>
         <div class="card-copy"><h3>Video</h3><p>Embeds a video clip. The controls let a visitor play, pause, and adjust the volume. This sample needs internet access.</p></div>
         <div class="info"><b>Syntax</b><code>&lt;video controls src="clip.mp4"&gt;&lt;/video&gt;</code></div>
         <div class="info"><b>Attributes</b><span><code>src</code>, <code>controls</code>, <code>poster</code>, <code>width</code>, <code>muted</code>, <code>loop</code></span></div>
-        <div class="demo"><span class="demo-label">BROWSER OUTPUT</span><video controls preload="none" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23e6eadc'/%3E%3Ccircle cx='350' cy='68' r='35' fill='%23c28b52'/%3E%3Cpath d='M0 205 130 85l112 120 70-68 168 113H0Z' fill='%23748b68'/%3E%3C/svg%3E"><source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">Your browser does not support video playback.</video></div>
+        <div class="demo"><span class="demo-label">BROWSER OUTPUT</span><video controls preload="none"><source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">Your browser does not support video playback.</video></div>
       </article>
 
-      <article class="tag-card" data-category="semantic" data-name="header semantic page section">
+      <article class="tag-card">
         <div class="card-top"><span class="number">16</span><code>&lt;header&gt;</code><span class="pill">SEMANTIC</span></div>
         <div class="card-copy"><h3>Header</h3><p>Introduces a page or a section. It often contains a title, logo, or introductory information.</p></div>
         <div class="info"><b>Syntax</b><code>&lt;header&gt;&lt;h2&gt;Page title&lt;/h2&gt;&lt;/header&gt;</code></div>
@@ -185,7 +169,7 @@
         <div class="demo"><span class="demo-label">BROWSER OUTPUT</span><header class="mini-header"><h4>Science Club</h4><p>Ideas, experiments, and discoveries</p></header></div>
       </article>
 
-      <article class="tag-card" data-category="semantic" data-name="nav navigation semantic">
+      <article class="tag-card">
         <div class="card-top"><span class="number">17</span><code>&lt;nav&gt;</code><span class="pill">SEMANTIC</span></div>
         <div class="card-copy"><h3>Navigation</h3><p>Groups the main links that help visitors move around a page or website.</p></div>
         <div class="info"><b>Syntax</b><code>&lt;nav aria-label="Main"&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/nav&gt;</code></div>
@@ -193,7 +177,7 @@
         <div class="demo"><span class="demo-label">BROWSER OUTPUT</span><nav class="mini-nav" aria-label="Club page example"><a href="#about">About</a><a href="#reference">Activities</a><a href="#top">Contact</a></nav></div>
       </article>
 
-      <article class="tag-card" data-category="semantic" data-name="main semantic content">
+      <article class="tag-card">
         <div class="card-top"><span class="number">18</span><code>&lt;main&gt;</code><span class="pill">SEMANTIC</span></div>
         <div class="card-copy"><h3>Main content</h3><p>Wraps the page's central content. A page should have one main element, separate from its header and footer.</p></div>
         <div class="info"><b>Syntax</b><code>&lt;main&gt;&lt;h1&gt;Page content&lt;/h1&gt;&lt;/main&gt;</code></div>
@@ -201,7 +185,7 @@
         <div class="demo"><span class="demo-label">BROWSER OUTPUT</span><div class="mini-main"><strong>Today's lesson</strong><p>The main element holds the central topic of this page.</p></div></div>
       </article>
 
-      <article class="tag-card" data-category="semantic" data-name="section semantic group">
+      <article class="tag-card">
         <div class="card-top"><span class="number">19</span><code>&lt;section&gt;</code><span class="pill">SEMANTIC</span></div>
         <div class="card-copy"><h3>Section</h3><p>Groups related content under one topic. A section usually has its own heading.</p></div>
         <div class="info"><b>Syntax</b><code>&lt;section&gt;&lt;h2&gt;Topic&lt;/h2&gt;...&lt;/section&gt;</code></div>
@@ -209,7 +193,7 @@
         <div class="demo"><span class="demo-label">BROWSER OUTPUT</span><section class="mini-box"><h4>Art supplies</h4><p>Paper, paint, and brushes</p></section></div>
       </article>
 
-      <article class="tag-card" data-category="semantic" data-name="article semantic post story">
+      <article class="tag-card">
         <div class="card-top"><span class="number">20</span><code>&lt;article&gt;</code><span class="pill">SEMANTIC</span></div>
         <div class="card-copy"><h3>Article</h3><p>Contains a complete piece of content that could make sense on its own, such as a news story or post.</p></div>
         <div class="info"><b>Syntax</b><code>&lt;article&gt;&lt;h2&gt;Story title&lt;/h2&gt;&lt;p&gt;...&lt;/p&gt;&lt;/article&gt;</code></div>
@@ -217,7 +201,7 @@
         <div class="demo"><span class="demo-label">BROWSER OUTPUT</span><article class="mini-box"><h4>Class garden opens</h4><p>Students planted herbs in the school garden.</p></article></div>
       </article>
 
-      <article class="tag-card" data-category="semantic" data-name="footer semantic page">
+      <article class="tag-card">
         <div class="card-top"><span class="number">21</span><code>&lt;footer&gt;</code><span class="pill">SEMANTIC</span></div>
         <div class="card-copy"><h3>Footer</h3><p>Closes a page or section with information such as authorship, contact details, or related links.</p></div>
         <div class="info"><b>Syntax</b><code>&lt;footer&gt;&lt;p&gt;Written by Alex&lt;/p&gt;&lt;/footer&gt;</code></div>
@@ -225,7 +209,7 @@
         <div class="demo"><span class="demo-label">BROWSER OUTPUT</span><footer class="mini-footer">Written by Alex | Class project</footer></div>
       </article>
 
-      <article class="tag-card" data-category="text" data-name="br break new line">
+      <article class="tag-card">
         <div class="card-top"><span class="number">22</span><code>&lt;br&gt;</code><span class="pill">TEXT</span></div>
         <div class="card-copy"><h3>Line break</h3><p>Starts a new line inside text, such as an address or a poem. It does not need a closing tag.</p></div>
         <div class="info"><b>Syntax</b><code>First line&lt;br&gt;Second line</code></div>
@@ -233,7 +217,7 @@
         <div class="demo"><span class="demo-label">BROWSER OUTPUT</span><p>Room 12<br>North Hall</p></div>
       </article>
 
-      <article class="tag-card" data-category="text" data-name="blockquote quote citation">
+      <article class="tag-card">
         <div class="card-top"><span class="number">23</span><code>&lt;blockquote&gt;</code><span class="pill">TEXT</span></div>
         <div class="card-copy"><h3>Block quote</h3><p>Marks a longer quotation from another source. Use <code>cite</code> to give the source URL.</p></div>
         <div class="info"><b>Syntax</b><code>&lt;blockquote cite="https://example.com"&gt;A quotation.&lt;/blockquote&gt;</code></div>
@@ -241,7 +225,7 @@
         <div class="demo"><span class="demo-label">BROWSER OUTPUT</span><blockquote>Learning is easier when you can see an example.</blockquote></div>
       </article>
 
-      <article class="tag-card" data-category="forms" data-name="textarea message comment">
+      <article class="tag-card">
         <div class="card-top"><span class="number">24</span><code>&lt;textarea&gt;</code><span class="pill">FORMS</span></div>
         <div class="card-copy"><h3>Multi-line input</h3><p>Creates a text field for a longer answer, such as a comment or message.</p></div>
         <div class="info"><b>Syntax</b><code>&lt;textarea name="message" rows="3"&gt;&lt;/textarea&gt;</code></div>
@@ -249,7 +233,6 @@
         <div class="demo"><span class="demo-label">BROWSER OUTPUT</span><label for="sample-message">Your question</label><textarea id="sample-message" rows="3" placeholder="Type a question..."></textarea></div>
       </article>
     </div>
-    <p class="no-results" id="no-results" hidden>No matching tags. Try another word or choose a different category.</p>
   </section>
 
   <section class="cheatsheet" aria-labelledby="skeleton-title">
@@ -274,6 +257,5 @@
   <p><strong>HTML Tag Guide</strong>, a mini reference for learning by example.</p>
   <a href="#top">Back to top</a>
 </footer>
-<script src="script.js"></script>
 </body>
 </html>
