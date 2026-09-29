@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive mini HTML reference guide">
+  <title>HTML TagLab — Mini HTML Reference</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <nav>
+    <div class="logo">&lt;TagLab/&gt;</div>
+    <a href="#tags">Explore Tags</a>
+  </nav>
+  <div class="hero-content">
+    <span class="badge">HTML REFERENCE GUIDE</span>
+    <h1>Learn HTML by <span>seeing it work.</span></h1>
+    <p>A visual mini-reference covering the most useful HTML tags, their purpose, syntax, attributes, and live browser examples.</p>
+    <a class="cta" href="#tags">Start Exploring ↓</a>
+  </div>
+</header>
+
+<main>
+<section class="intro">
+  <div>
+    <span class="eyebrow">THE BASICS</span>
+    <h2>What is HTML?</h2>
+    <p><strong>HTML</strong> (HyperText Markup Language) is the standard markup language used to structure content on the web. Tags tell the browser what each piece of content means.</p>
+  </div>
+  <div class="stats">
+    <div><b>20+</b><small>Tags covered</small></div>
+    <div><b>7</b><small>Categories</small></div>
+    <div><b>∞</b><small>Possibilities</small></div>
+  </div>
+</section>
+
+<div class="toolbar" id="tags">
+  <div>
+    <span class="eyebrow">REFERENCE</span>
+    <h2>HTML Tag Library</h2>
+  </div>
+  <input id="search" type="search" placeholder="Search tags...">
+</div>
+
+<div class="filters">
+  <button class="filter active" data-filter="all">All</button>
+  <button class="filter" data-filter="text">Text</button>
+  <button class="filter" data-filter="media">Media</button>
+  <button class="filter" data-filter="lists">Lists</button>
+  <button class="filter" data-filter="data">Data</button>
+  <button class="filter" data-filter="forms">Forms</button>
+  <button class="filter" data-filter="semantic">Semantic</button>
+</div>
+
+<section class="tag-grid">
+
+<article class="tag-card" data-category="text" data-name="h1 heading">
+  <div class="card-top"><span class="number">01</span><code>&lt;h1&gt;</code><span class="pill">TEXT</span></div>
+  <h3>Heading</h3><p>Defines the main heading of a page or section.</p>
+  <div class="info"><b>Syntax</b><code>&lt;h1&gt;Heading&lt;/h1&gt;</code></div>
+  <div class="info"><b>Attributes</b><span>Global attributes such as <code>id</code>, <code>class</code></span></div>
+  <div class="demo"><label>LIVE OUTPUT</label><h1>HTML is awesome!</h1></div>
+</article>
+
+<article class="tag-card" data-category="text" data-name="p paragraph">
+  <div class="card-top"><span class="number">02</span><code>&lt;p&gt;</code><span class="pill">TEXT</span></div>
+  <h3>Paragraph</h3><p>Defines a block of normal text.</p>
+  <div class="info"><b>Syntax</b><code>&lt;p&gt;Your text here.&lt;/p&gt;</code></div>
+  <div class="info"><b>Attributes</b><span><code>class</code>, <code>id</code>, <code>style</code></span></div>
+  <div class="demo"><label>LIVE OUTPUT</label><p>This is a paragraph created using the <strong>p</strong> tag.</p></div>
+</article>
+
+<article class="tag-card" data-category="text" data-name="strong em mark formatting">
+  <div class="card-top"><span class="number">03</span><code>&lt;strong&gt; &lt;em&gt; &lt;mark&gt;</code><span class="pill">TEXT</span></div>
+  <h3>Text Formatting</h3><p>Gives text semantic emphasis, importance, or highlighting.</p>
+  <div class="info"><b>Syntax</b><code>&lt;strong&gt;Important&lt;/strong&gt;</code></div>
+  <div class="info"><b>Attributes</b><span>Global attributes</span></div>
+  <div class="demo"><label>LIVE OUTPUT</label><p><strong>Important</strong> · <em>Emphasized</em> · <mark>Highlighted</mark></p></div>
+</article>
+
+<article class="tag-card" data-category="media" data-name="a link anchor">
+  <div class="card-top"><span class="number">04</span><code>&lt;a&gt;</code><span class="pill">MEDIA</span></div>
+  <h3>Link</h3><p>Creates a hyperlink to another page, file, or location.</p>
+  <div class="info"><b>Syntax</b><code>&lt;a href="url"&gt;Link&lt;/a&gt;</code></div>
+  <div class="info"><b>Attributes</b><span><code>href</code>, <code>target</code>, <code>rel</code></span></div>
+  <div class="demo"><label>LIVE OUTPUT</label><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Visit MDN HTML Docs ↗</a></div>
+</article>
+
+<article class="tag-card" data-category="media" data-name="img image">
+  <div class="card-top"><span class="number">05</span><code>&lt;img&gt;</code><span class="pill">MEDIA</span></div>
+  <h3>Image</h3><p>Embeds an image into a webpage.</p>
+  <div class="info"><b>Syntax</b><code>&lt;img src="image.jpg" alt="Description"&gt;</code></div>
+  <div class="info"><b>Attributes</b><span><code>src</code>, <code>alt</code>, <code>width</code>, <code>height</code></span></div>
+  <div class="demo image-demo"><label>LIVE OUTPUT</label><img src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=500&q=80" alt="Green plant" loading="lazy"></div>
+</article>
+
+<article class="tag-card" data-category="lists" data-name="ul li unordered list">
+  <div class="card-top"><span class="number">06</span><code>&lt;ul&gt; &lt;li&gt;</code><span class="pill">LISTS</span></div>
+  <h3>Unordered List</h3><p>Creates a bulleted list of related items.</p>
+  <div class="info"><b>Syntax</b><code>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code></div>
+  <div class="info"><b>Attributes</b><span>Global attributes</span></div>
+  <div class="demo"><label>LIVE OUTPUT</label><ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></div>
+</article>
+
+<article class="tag-card" data-category="lists" data-name="ol ordered list">
+  <div class="card-top"><span class="number">07</span><code>&lt;ol&gt;</code><span class="pill">LISTS</span></div>
+  <h3>Ordered List</h3><p>Creates a numbered or ordered list.</p>
+  <div class="info"><b>Syntax</b><code>&lt;ol&gt;&lt;li&gt;First&lt;/li&gt;&lt;/ol&gt;</code></div>
+  <div class="info"><b>Attributes</b><span><code>start</code>, <code>reversed</code>, <code>type</code></span></div>
+  <div class="demo"><label>LIVE OUTPUT</label><ol><li>Plan</li><li>Code</li><li>Test</li></ol></div>
+</article>
+
+<article class="tag-card" data-category="data" data-name="table tr th td">
+  <div class="card-top"><span class="number">08</span><code>&lt;table&gt;</code><span class="pill">DATA</span></div>
+  <h3>Table</h3><p>Displays structured data in rows and columns.</p>
+  <div class="info"><b>Syntax</b><code>&lt;table&gt;&lt;tr&gt;&lt;td&gt;Data&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></div>
+  <div class="info"><b>Attributes</b><span><code>colspan</code>, <code>rowspan</code> on cells</span></div>
+  <div class="demo"><label>LIVE OUTPUT</label><table><tr><th>Tag</th><th>Use</th></tr><tr><td>&lt;p&gt;</td><td>Text</td></tr><tr><td>&lt;a&gt;</td><td>Links</td></tr></table></div>
+</article>
+
+<article class="tag-card" data-category="forms" data-name="form input label button">
+  <div class="card-top"><span class="number">09</span><code>&lt;form&gt;</code><span class="pill">FORMS</span></div>
+  <h3>Form</h3><p>Groups interactive controls for collecting user input.</p>
+  <div class="info"><b>Syntax</b><code>&lt;form&gt;...controls...&lt;/form&gt;</code></div>
+  <div class="info"><b>Attributes</b><span><code>action</code>, <code>method</code>, <code>autocomplete</code></span></div>
+  <div class="demo"><label>LIVE OUTPUT</label><form onsubmit="event.preventDefault(); alert('Form submitted!');"><input type="text" placeholder="Your name" aria-label="Your name"><button type="submit">Submit</button></form></div>
+</article>
+
+<article class="tag-card" data-category="forms" data-name="input">
+  <div class="card-top"><span class="number">10</span><code>&lt;input&gt;</code><span class="pill">FORMS</span></div>
+  <h3>Input</h3><p>Creates a single-line field for user input.</p>
+  <div class="info"><b>Syntax</b><code>&lt;input type="text" placeholder="..."&gt;</code></div>
+  <div class="info"><b>Attributes</b><span><code>type</code>, <code>name</code>, <code>placeholder</code>, <code>required</code></span></div>
+  <div class="demo"><label>LIVE OUTPUT</label><input type="email" placeholder="student@example.com" aria-label="Email"></div>
+</article>
+
+<article class="tag-card" data-category="forms" data-name="select option dropdown">
+  <div class="card-top"><span class="number">11</span><code>&lt;select&gt;</code><span class="pill">FORMS</span></div>
+  <h3>Dropdown</h3><p>Provides a menu from which the user can select an option.</p>
+  <div class="info"><b>Syntax</b><code>&lt;select&gt;&lt;option&gt;HTML&lt;/option&gt;&lt;/select&gt;</code></div>
+  <div class="info"><b>Attributes</b><span><code>name</code>, <code>required</code>, <code>multiple</code></span></div>
+  <div class="demo"><label>LIVE OUTPUT</label><select aria-label="Choose skill"><option>HTML</option><option>CSS</option><option>JavaScript</option></select></div>
+</article>
+
+<article class="tag-card" data-category="media" data-name="video multimedia">
+  <div class="card-top"><span class="number">12</span><code>&lt;video&gt;</code><span class="pill">MEDIA</span></div>
+  <h3>Video</h3><p>Embeds video content with native browser controls.</p>
+  <div class="info"><b>Syntax</b><code>&lt;video controls src="video.mp4"&gt;&lt;/video&gt;</code></div>
+  <div class="info"><b>Attributes</b><span><code>controls</code>, <code>autoplay</code>, <code>muted</code>, <code>loop</code></span></div>
+  <div class="demo"><label>LIVE OUTPUT</label><div class="fake-video">▶<span>Video player example</span></div></div>
+</article>
+
+<article class="tag-card" data-category="media" data-name="audio multimedia">
+  <div class="card-top"><span class="number">13</span><code>&lt;audio&gt;</code><span class="pill">MEDIA</span></div>
+  <h3>Audio</h3><p>Embeds sound or music with browser controls.</p>
+  <div class="info"><b>Syntax</b><code>&lt;audio controls src="sound.mp3"&gt;&lt;/audio&gt;</code></div>
+  <div class="info"><b>Attributes</b><span><code>controls</code>, <code>autoplay</code>, <code>loop</code>, <code>muted</code></span></div>
+  <div class="demo"><label>LIVE OUTPUT</label><audio controls preload="none"></audio></div>
+</article>
+
+<article class="tag-card" data-category="semantic" data-name="header semantic">
+  <div class="card-top"><span class="number">14</span><code>&lt;header&gt;</code><span class="pill">SEMANTIC</span></div>
+  <h3>Header</h3><p>Represents introductory content or navigation for a page or section.</p>
+  <div class="info"><b>Syntax</b><code>&lt;header&gt;...&lt;/header&gt;</code></div>
+  <div class="info"><b>Attributes</b><span>Global attributes</span></div>
+  <div class="demo"><label>LIVE OUTPUT</label><header class="mini-header">Site Header · Navigation · Logo</header></div>
+</article>
+
+<article class="tag-card" data-category="semantic" data-name="nav semantic">
+  <div class="card-top"><span class="number">15</span><code>&lt;nav&gt;</code><span class="pill">SEMANTIC</span></div>
+  <h3>Navigation</h3><p>Contains major navigation links for a page or site.</p>
+  <div class="info"><b>Syntax</b><code>&lt;nav&gt;&lt;a href="..."&gt;Home&lt;/a&gt;&lt;/nav&gt;</code></div>
+  <div class="info"><b>Attributes</b><span>Global attributes</span></div>
+  <div class="demo"><label>LIVE OUTPUT</label><nav class="mini-nav"><a href="#tags">Home</a><a href="#tags">Docs</a><a href="#tags">About</a></nav></div>
+</article>
+
+<article class="tag-card" data-category="semantic" data-name="section semantic">
+  <div class="card-top"><span class="number">16</span><code>&lt;section&gt;</code><span class="pill">SEMANTIC</span></div>
+  <h3>Section</h3><p>Groups thematically related content into a distinct section.</p>
+  <div class="info"><b>Syntax</b><code>&lt;section&gt;...content...&lt;/section&gt;</code></div>
+  <div class="info"><b>Attributes</b><span>Global attributes</span></div>
+  <div class="demo"><label>LIVE OUTPUT</label><section class="mini-box"><h4>Featured Section</h4><p>Related content lives here.</p></section></div>
+</article>
+
+<article class="tag-card" data-category="semantic" data-name="article semantic">
+  <div class="card-top"><span class="number">17</span><code>&lt;article&gt;</code><span class="pill">SEMANTIC</span></div>
+  <h3>Article</h3><p>Represents self-contained content that could stand independently.</p>
+  <div class="info"><b>Syntax</b><code>&lt;article&gt;...content...&lt;/article&gt;</code></div>
+  <div class="info"><b>Attributes</b><span>Global attributes</span></div>
+  <div class="demo"><label>LIVE OUTPUT</label><article class="mini-box"><h4>HTML Tip #17</h4><p>Semantic tags make structure clearer.</p></article></div>
+</article>
+
+<article class="tag-card" data-category="semantic" data-name="footer semantic">
+  <div class="card-top"><span class="number">18</span><code>&lt;footer&gt;</code><span class="pill">SEMANTIC</span></div>
+  <h3>Footer</h3><p>Represents footer information for a page or section.</p>
+  <div class="info"><b>Syntax</b><code>&lt;footer&gt;Copyright...&lt;/footer&gt;</code></div>
+  <div class="info"><b>Attributes</b><span>Global attributes</span></div>
+  <div class="demo"><label>LIVE OUTPUT</label><footer class="mini-footer">© 2026 TagLab · Made for learning</footer></div>
+</article>
+
+<article class="tag-card" data-category="text" data-name="br break">
+  <div class="card-top"><span class="number">19</span><code>&lt;br&gt;</code><span class="pill">TEXT</span></div>
+  <h3>Line Break</h3><p>Forces text to continue on a new line.</p>
+  <div class="info"><b>Syntax</b><code>Hello&lt;br&gt;World</code></div>
+  <div class="info"><b>Attributes</b><span>None specific; global attributes generally apply</span></div>
+  <div class="demo"><label>LIVE OUTPUT</label>Hello<br>World</div>
+</article>
+
+<article class="tag-card" data-category="text" data-name="blockquote quote">
+  <div class="card-top"><span class="number">20</span><code>&lt;blockquote&gt;</code><span class="pill">TEXT</span></div>
+  <h3>Block Quote</h3><p>Marks a longer quotation taken from another source.</p>
+  <div class="info"><b>Syntax</b><code>&lt;blockquote&gt;Quote...&lt;/blockquote&gt;</code></div>
+  <div class="info"><b>Attributes</b><span><code>cite</code> can identify the source URL</span></div>
+  <div class="demo"><label>LIVE OUTPUT</label><blockquote>“The web is for everyone.”</blockquote></div>
+</article>
+
+</section>
+
+<section class="cheatsheet">
+  <span class="eyebrow">BONUS</span>
+  <h2>HTML document skeleton</h2>
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;My Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p><strong>&lt;TagLab/&gt;</strong> — A mini HTML reference guide.</p>
+  <p>Built for classroom demonstration · 20 tags covered</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
